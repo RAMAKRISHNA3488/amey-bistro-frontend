@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [token, setToken] = useState(localStorage.getItem('token') || null);
 
-    const API_URL = 'https://amey-bistro-frontend-v73h.vercel.app/api';
+    const API_URL = 'https://amey-bistro-backend.vercel.app/api';
 
     // Configure axios defaults
     if (token) {
